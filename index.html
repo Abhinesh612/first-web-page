@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./style.css" rel="stylesheet">
+		<link href="./input.css" rel="stylesheet">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					//   screens:{
+					//	'big': '1800px',
+					//   },
+					extend: {
+						maxHeight: {
+
+						},
+						colors: {
+							'slack-pur': '#541554',
+							'slack-whi': '#f4ede4',
+						},
+					},
+				},
+				variants: {
+					display: ['group-hover']
+				},		}
+		</script>
+		<script src="https://kit.fontawesome.com/b793031eb7.js" crossorigin="anonymous"></script>
+		<title>Slack</title>
+	</head>
+
+	<body class="m-0 p-0 bg-slack-whi">
+		<section class="bg-slack-pur pt-4">
+			<!--Navigation Bar-->
+			<header class="flex flex-row justify-between rounded-full items-center mx-10 pb-8 pt-4">
+				<nav class="pl-24 text-white">
+					<ul class="flex flex-row flex-wrap text-lg">
+						<li>
+							<svg height="25" width="100" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"><title>Slack</title><g fill="none"><path d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z" fill="#ffffff"></path><path d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986" fill="#097eff"></path><path d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985" fill="#097eff"></path><path d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985" fill="#ecb12f"></path><path d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985" fill="#ecb12f"></path></g></svg>
+						</li>
+						<li class="group relative dropdown mx-12 font-sans font-medium">
+							<button class="font-medium">Products</button>
+							<div
+								class="group-hover:block droupdown-menu hidden h-auto absolute z-10 text-black bg-white rounded-lg shadow-lg">
+								<a href="#" class="block py-2 md:pr-36">LINK!asdfafdfa</a>
+								<a href="#" class="block py-2 ">LINK!sdgfasgd</a>
+								<a href="#" class="block py-2 ">LINK fvcfgd!</a>
+								<a href="#" class="block py-2 ">LINK fvcfgd!</a>
+								<a href="#" class="block py-2 ">LINK !</a>
+								<a href="#" class="block py-2 ">xcv !</a>
+								<a href="#" class="block py-2 ">LINK !</a>
+								<a href="#" class="block py-2 ">sxv !</a>
+								<a href="#" class="block py-2 border rounded-lg">LINsdsggfsdfsdfK !</a>
+							</div>
+						</li>
+						<li class="mx-12 font-sans">
+							<button href="#" class="font-medium link-underline link-underline-black">Solutions</button>
+						</li>
+						<li class="mx-12 font-sans">
+							<button href="#" class="font-medium link-underline link-underline-black">Enterprise</button>
+						</li>
+						<li class="mx-12 font-sans">
+							<button href="#" class="font-medium link-underline link-underline-black">Resources</button>
+						</li>
+						<li class="font-sans">
+							<button href="#" class="font-medium link-underline link-underline-black">Pricing</button>
+						</li>
+					</ul>
+				</nav>
+				<nav class="pr-24 text-white">
+					<ul class="flex flex-row flex-wrap text-lg">
+						<li>
+							<i class="fa-solid fa-magnifying-glass scale-150"></i>
+						</li>
+						<li class="mx-8">
+							<button class="py-2 px-4 font-medium">Sign in</button>
+						</li>
+						<li class="mx-8">
+							<button class="border py-2 px-4 font-medium">TALK TO SALES</button>
+						</li>
+						<li class="mx-8">
+							<button class="border py-2 px-4 font-medium">TRY FOR FREE</button>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		</section>
+		<!--Home Pic -->
+		<section class="flex flex-row justify-between bg-slack-pur">
+			<div class="flex justify-center items-center">
+				<div class="md:pl-28 font-semibold">
+					<h1 class="text-white text-7xl">Great teamwork starts<br>with a
+						<span class="text-yellow-500">
+							digital HQ
+						</span>
+					</h1>
+					<p class="text-white font-normal text-xl py-6">With all your peoplw, tools and communication in one
+					place,<br>
+					you can work faster and more flexibly than ever before.</p>
+					<div class="flex flex-row">
+						<div>
+							<button>SIGN UP WITH GOOGLE</button>
+						</div>
+						<div>
+							<button>SIGN UP WITH EMAIL</button>
+						</div>
+					</div>
+					<div class="pt-6">
+						<span class="text-white bold text-xl">Slack is free to try</span>
+						<span class="text-white font-normal text-xl">and faster tp set up with Google</span>
+					</div>
+				</div>
+			</div>
+			<div class="py-16 hidden 2xl:block">
+				<video autoplay loop muted class="max-h-[35rem]">
+					<source src="./res/2_video.webm" type="video/webm">
+				</video>
+			</div>
+		</section>
+		<section class="bg-slack-whi">
+			<!--Companies logo-->
+			<div>
+				<p class="text-center md:my-8 my-6 font-semibold text-lg">TRUSTED BY COMPANIES ALL OVER THE WORLD</p>
+			</div>
+			<div class="mb-10 px-20">
+				<div class="flex flex-row flex-wrap justify-center">
+					<img src="./res/1_logo.png" alt="SEEK">
+					<img src="./res/2_logo.png" alt="SEEK" class="px-16">
+					<img src="./res/3_logo.png" alt="SEEK" class="px-16">
+					<img src="./res/4_logo.png" alt="SEEK" class="px-16">
+					<img src="./res/5_logo.png" alt="SEEK" class="px-16">
+					<img src="./res/6_logo.png" alt="SEEK">
+				</div>
+			</div>
+			<!--Grid Layout start-->
+			<div class="grid grid-cols-1 md:grid-cols-2 grid-rows-6 md:grid-rows-3 md:gap-y-24 gap-y-12 grid-flow-col">
+				<div class="flex justify-center items-center">
+					<video autoplay loop muted class="max-h-[27rem]">
+						<source src="./res/1_video.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="flex justify-center items-center">
+					<div>
+						<span class="text-6xl font-bold">Choose how you<br>want to work</span>
+						<p class="mt-4">In Slack, you’ve got all the flexibility to work when, where<br>
+						and how it’s best for you. You can easily chat, send audio and <br>
+						video clips, or hop on a huddle to talk things out live.
+						</p>
+						<a href="#" class="text-2xl text-sky-500">Learn more about flixible channels</a>
+					</div>
+				</div>
+				<div class="flex justify-center items-center">
+					<video autoplay loop muted class="max-h-[27rem]">
+						<source src="./res/4_video.webm" type="video/webm">
+					</video>
+				</div>
+				<div class="flex justify-center items-center">
+					<div>
+						<span class="text-6xl font-bold">Bring your team<br>together</span>
+						<p class="mt-4">At the heart of Slack are channels: organized spaces for<br>
+						everyone and everything you need for work. In channels, it’s <br>
+						easier to connect across departments, offices, time zones <br>
+						and even other companies.</p>
+						<a href="#" class="text-2xl text-sky-500">Learn more about channels</a>
+					</div>
+				</div>
+				<div class="flex justify-center items-center">
+					<video autoplay loop muted class="max-h-[27rem]">
+						<source src="./res/3_video.webm" type="video/webm">
+					</video>
+				</div>
+				<div class="flex justify-center items-center">
+					<div>
+						<span class="text-6xl font-bold">Move faster with your<br>tools in one place</span>
+						<p class="mt-4">With your other work apps connected to Slack, you can<br>
+						work faster by switching tabs less. And with powerful tools<br>
+						like Workflow Builder, you can automate away routine tasks.
+						</p>
+						<a href="#" class="text-2xl text-sky-500">Learn more about the Slack Platform</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-white pb-10">
+			<div class="pt-12">
+				<h1 class="text-5xl font-semibold text-center">Teams large and small rely on Slack</h1>
+				<p class="text-center text-xl pt-4">Slack securely scales up to support collaboration at the world’s biggest
+				companies.</p>
+			</div>
+			<div class="flex flex-row flex-wrap justify-center pt-6">
+				<button href="#" class="bg-slack-pur text-xl font-medium text-white py-4 px-6 rounded-lg mr-6">MEET SLACK
+					FOR ENTERPRISE</button>
+				<button href="#" class="border-2 border-slack-pur text-xl font-medium py-4 px-6 rounded-lg">TALK TO
+					SALES</button>
+			</div>
+			<div class="flex flex-row flex-wrap justify-around mt-16 pb-16">
+				<div>
+					<span class="text-6xl text-slack-pur font-bold">75%</span>
+					<p class="font-medium text-xl">of users depend on<br>Slack to get work done*</p>
+				</div>
+				<div>
+					<span class="text-6xl text-slack-pur font-bold">84%</span>
+					<p class="font-medium text-xl">feel more connected to<br>their teams*</p>
+				</div>
+				<div>
+					<span class="text-6xl text-slack-pur font-bold">91%</span>
+					<p class="font-medium text-xl">feel their ability to work<br>remotely has improved*</p>
+				</div>
+			</div>
+			<div class="flex flex-row flex-wrap justify-between">
+				<div>
+					<video autoplay loop muted class="rounded-r-full max-h-[30rem]">
+						<source src="./res/final_video.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div>
+					<p class="text-3xl italic pb-8">“ We were able to create a large virtual network of
+					<br> employees that can communicate as though they are
+					<br> together. There was a lot of disruption in terms of where
+					<br> we worked, but in terms of how we worked—very little
+					<br> disruption.”
+					</p>
+					<span class="font-bold block text-lg">Mark Smith</span>
+					<span class="font-semibold block text-lg">Senior Technical Product Manager, T-Mobile</span>
+					<a href="#" class="text-xl">See more customeries stories</a>
+				</div>
+			</div>
+			<div>
+				<p class="text-center mt-8 mb-4 text-lg">* Weighted average. Based on 2,707 survey responses from weekly
+				Slack users in the U.S., UK, Australia and Canada with a ± 2% margin of error at 95% CI (August 2020).
+				</p>
+			</div>
+		</section>
+		<section class="lg:pb-16 pb-12">
+			<div class="my-4 pt-6 pb-4">
+				<h1 class="font-bold text-center text-4xl">Take a deeper dive into a new way to work</h1>
+			</div>
+			<div class="flex flex-row flex-wrap justify-around">
+				<div class="lg:w-1/4 w-full">
+					<div
+						class="flex flex-col items-center justify-around h-96 relative bg-slack-pur mx-8 px-8 transform transition duration-500 hover:scale-110">
+						<div class="text-white font-bold text-2xl"><span>Collection</span>
+							<h2>Slack as your digital HQ</h2>
+						</div>
+						<img src="./res/1_flex.png" alt="" class="">
+						<a href="#" class="text-white font-bold text-2xl">SELL ALL</a>
+					</div>
+				</div>
+				<div class="lg:w-1/4 relative w-full">
+					<div
+						class="flex flex-col items-center justify-around h-96 relative bg-white mx-8 px-8 transform transition duration-500 hover:scale-110">
+						<img src="./res/2_flex.jpg" alt="">
+						<div class="text-black"><span class="text-lg">Resource</span>
+							<h2 class="text-2xl font-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa,
+								consectetur.</h2>
+						</div>
+						<span class="text-2xl font-bold text-sky-400">SEE</span>
+					</div>
+				</div>
+				<div class="lg:w-1/4 relative w-full">
+					<div
+						class="flex flex-col items-center justify-around h-96 relative bg-white mx-8 px-8 transform transition duration-500 hover:scale-110">
+						<img src="./res/3_flex.jpg" alt="">
+						<div class="text-black"><span class="text-lg">Resource</span>
+							<h2 class="text-2xl font-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa,
+								consectetur.</h2>
+						</div>
+						<span class="text-2xl font-bold text-sky-400">SEE</span>
+					</div>
+				</div>
+				<div class="lg:w-1/4 relative w-full">
+					<div
+						class="flex flex-col items-center justify-around h-96 relative bg-white mx-8 px-8 transform transition duration-500 hover:scale-110">
+						<img src="./res/4_flex.jpg" alt="">
+						<div class="text-black"><span class="text-lg">Resource</span>
+							<h2 class="text-2xl font-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa,
+								consectetur.</h2>
+						</div>
+						<span class="text-2xl font-bold text-sky-400">SEE</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-white">
+			<div class="someshape flex flex-col items-center bg-slack-pur mb-24 pb-24">
+				<div class="py-24">
+					<h1 class="text-6xl text-white font-bold">Welcome to your new digital HQ</h1>
+				</div>
+				<div>
+					<button class="border py-2 px-4 text-slack-pur lg:py-4 lg:px-6 bg-white font-medium lg:mr-8">TRY FOR FREE</button>
+					<button class="border border-white text-white py-2 px-4 lg:py-4 lg:px-6 font-medium lg:mr-8">TALK TO SALES</button>
+				</div>
+			</div>
+			<div class="flex flex-rowa flex-wrap justify-around items-start">
+				<div>
+					<svg width="54" height="54"  viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M19.712.133a5.381 5.381 0 0 0-5.376 5.387 5.381 5.381 0 0 0 5.376 5.386h5.376V5.52A5.381 5.381 0 0 0 19.712.133m0 14.365H5.376A5.381 5.381 0 0 0 0 19.884a5.381 5.381 0 0 0 5.376 5.387h14.336a5.381 5.381 0 0 0 5.376-5.387 5.381 5.381 0 0 0-5.376-5.386" fill="#097eff"></path><path d="M53.76 19.884a5.381 5.381 0 0 0-5.376-5.386 5.381 5.381 0 0 0-5.376 5.386v5.387h5.376a5.381 5.381 0 0 0 5.376-5.387m-14.336 0V5.52A5.381 5.381 0 0 0 34.048.133a5.381 5.381 0 0 0-5.376 5.387v14.364a5.381 5.381 0 0 0 5.376 5.387 5.381 5.381 0 0 0 5.376-5.387" fill="#097eff"></path><path d="M34.048 54a5.381 5.381 0 0 0 5.376-5.387 5.381 5.381 0 0 0-5.376-5.386h-5.376v5.386A5.381 5.381 0 0 0 34.048 54m0-14.365h14.336a5.381 5.381 0 0 0 5.376-5.386 5.381 5.381 0 0 0-5.376-5.387H34.048a5.381 5.381 0 0 0-5.376 5.387 5.381 5.381 0 0 0 5.376 5.386" fill="#ecb12f"></path><path d="M0 34.249a5.381 5.381 0 0 0 5.376 5.386 5.381 5.381 0 0 0 5.376-5.386v-5.387H5.376A5.381 5.381 0 0 0 0 34.25m14.336-.001v14.364A5.381 5.381 0 0 0 19.712 54a5.381 5.381 0 0 0 5.376-5.387V34.25a5.381 5.381 0 0 0-5.376-5.387 5.381 5.381 0 0 0-5.376 5.387" fill="#ecb12f"></path></g></svg>
+				</div>
+				<div class="flex flex-col items-center">
+					<span class="text-xl font-bold">Why Slack?</span>
+					<a href="#" class="text-lg">Lorem.</a>
+					<a href="#" class="text-lg">Lorem, ipsum dolor.</a>
+					<a href="#" class="text-lg">Lorem, ipsum.</a>
+					<a href="#" class="text-lg">Lorem, ipsum.</a>
+					<a href="#" class="text-lg">lorem</a>
+				</div>
+				<div class="flex flex-col items-center">
+					<span class="text-xl font-bold">Product</span>
+					<a href="#" class="text-lg">Lorem.</a>
+					<a href="#" class="text-lg">Lorem, ipsum dolor.</a>
+					<a href="#" class="text-lg">Lorem, ipsum.</a>
+					<a href="#" class="text-lg">Lorem, ipsum.</a>
+				</div>
+				<div class="flex flex-col items-center">
+					<span class="text-xl font-bold">Pricing</span>
+					<a href="#" class="text-lg">Lorem.</a>
+					<a href="#" class="text-lg">Lorem, ipsum dolor.</a>
+				</div>
+				<div class="flex flex-col items-center">
+					<span class="text-xl font-bold">Resources</span>
+					<a href="#" class="text-lg">Lorem.</a>
+					<a href="#" class="text-lg">Lorem, ipsum dolor.</a>
+					<a href="#" class="text-lg">Lorem, ipsum.</a>
+					<a href="#" class="text-lg">Lorem, ipsum.</a>
+					<a href="#" class="text-lg">lorem</a>
+					<a href="#" class="text-lg">lorem</a>
+					<a href="#" class="text-lg">lorem</a>
+				</div>
+				<div class="flex flex-col items-center">
+					<span class="text-xl font-bold">Company</span>
+					<a href="#" class="text-lg">Lorem, ipsum dolor.</a>
+					<a href="#" class="text-lg">Lorem, ipsum.</a>
+					<a href="#" class="text-lg">Lorem, ipsum.</a>
+					<a href="#" class="text-lg">lorem</a>
+					<a href="#" class="text-lg">lorem</a>
+					<a href="#" class="text-lg">lorem</a>
+				</div>
+			</div>
+		</section>
+	</body>
+
+</html>
